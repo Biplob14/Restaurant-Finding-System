@@ -7,10 +7,10 @@ $db= mysqli_connect("localhost","root","","rms");
 
 
 if (!isset($db)) {
-	echo "not connected". mysqli_error($db);
+  echo "not connected". mysqli_error($db);
 }else{
 
-	echo "connected"."</br>";
+  echo "connected"."</br>";
 }
 
 if (isset($_POST['submit'])) {

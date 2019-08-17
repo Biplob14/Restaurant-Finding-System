@@ -10,9 +10,8 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
 <?php include "admin_sidebar.php" ?>
 
-
-            </div>
-            <!-- /.container-fluid -->
+    </div>
+    <!-- /#wrapper -->
 
 
 <?php include "admin_footer.php" ?>

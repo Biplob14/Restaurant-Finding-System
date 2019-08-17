@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-light" style="background-color:  #38006f;">
+<nav class="navbar  navbar-inverse navbar-light" style="background-color:  #38006f;" >
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -12,7 +12,7 @@
     </a>
       <a class="navbar-brand" href="index.php">Resturant Finder System</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse sticky-top">
       <ul class="nav navbar-nav navbar-right">
 
         <li class="dropdown">
@@ -24,25 +24,13 @@
         </li>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <li><a href="login.php" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         <li><a href="admin/admin_index.php" ><span class=""></span> Admin</a></li>
 
       </ul>
     </div>
   </div>
+
+
 </nav>
+

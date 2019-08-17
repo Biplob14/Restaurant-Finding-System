@@ -1,9 +1,5 @@
 
-<footer class="page-footer footer"
-	style="position: fixed;
-		   left: 0;
-		   bottom: 0;
-		   width: 100%;">
+<footer class="page-footer  jumbotron">
 		   
 	<div class="container">
 		<div class="row">

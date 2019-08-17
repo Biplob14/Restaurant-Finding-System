@@ -3,11 +3,11 @@
 <div class="container" id="wrap">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            <form action="server.php" method="post" accept-charset="utf-8" class="form" role="form">   <legend>Sign Up</legend>
+            <form action="server.php" method="post" accept-charset="utf-8" class="form" role="form">   <legend>Sign Up for Restaurant</legend>
 
                     <div class="row">
                         
-                            <label>Resturant Name</label>
+                            <label>Restaurant Name</label>
                             <input type="text" name="r_name" value="" class="form-control input-lg" placeholder="Resturant Name"  />                     
 
                         <label>Mobile Number</label>

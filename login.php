@@ -1,5 +1,11 @@
 <?php include "header.php" ?>
 
+<style type="text/css">
+	#wrap{
+		margin-bottom: 30%;
+	}
+</style>
+
 <div class="container" id="wrap">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">

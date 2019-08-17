@@ -1,8 +1,16 @@
 <?php include "header.php"?>
+
+<style type="text/css">
+	
+	#wrap{
+		margin-bottom: 10%;
+	}
+</style>
+
 <link rel="stylesheet" type="text/css" href="about_us.css">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <div class="about-section paddingTB60 gray-bg">
-                <div class="container">
+                <div class="container" id="wrap">
                     <div class="row">
 						<div class="col-md-7 col-sm-6">
 							<div class="about-title clearfix">
