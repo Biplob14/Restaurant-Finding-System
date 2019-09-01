@@ -1,4 +1,3 @@
-
 <?php include "admin_header.php" ?>
 
 
@@ -29,7 +28,24 @@
 
     <!-- Include your text and Page Here -->
 
-<h1 style="text-align: center;">Welcome To Admin Panel</h1>
+<h1 style="text-align: center;">It's a Blank Page</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </div>
     <!-- /#wrapper -->

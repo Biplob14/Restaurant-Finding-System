@@ -7,7 +7,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="admin_index.php">RMS Admin</a>
+                <a class="navbar-brand" href="rms_admin.php">RMS Admin</a>
                 <a class="navbar-brand" href="../index.php">Home</a>
 
             </div>

@@ -25,7 +25,7 @@
 
 
         <li><a href="login.php" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        <li><a href="admin/admin_index.php" ><span class=""></span> Admin</a></li>
+        <li><a href="admin/rms_admin.php" ><span class=""></span> Admin</a></li>
 
       </ul>
     </div>

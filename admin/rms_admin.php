@@ -1,4 +1,3 @@
-
 <?php include "admin_header.php" ?>
 
 
@@ -29,7 +28,7 @@
 
     <!-- Include your text and Page Here -->
 
-<h1 style="text-align: center;">Welcome To Admin Panel</h1>
+<h1 style="text-align: center;">Restaurant Management System Admin</h1>
 
     </div>
     <!-- /#wrapper -->

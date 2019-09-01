@@ -1,19 +1,21 @@
-<!-- user signup -->
-<?php include "server_connect.php" ?>
+<!-- restaurant signup database-->
+
+<?php include "server_connect.php" ?> <!-- database connect -->
 
 <?php 
+
 
 
 if (isset($_POST['submit'])) {
 	
 //insert Data
-$first_name = $_POST['first_name'];
-$last_name = $_POST['last_name'];
+$r_name = $_POST['r_name'];
+
 $mobile_no = $_POST['mobile_no'];
 $password = $_POST['password'];
 $password_2 = $_POST['password_2'];
 $email = $_POST['email'];
-$gender = $_POST['gender'];
+$r_address = $_POST['r_address'];
 $insert = "";
 //email check
 if($password == $password_2){
@@ -23,7 +25,7 @@ if(mysqli_num_rows($res_e) > 0){
   	  echo "Sorry... email already taken"; 	
   	}else{
   			$password = md5($password);
-           $insert = "INSERT INTO signup (first_name, last_name, mobile_no,email, password, gender ) VALUES ('$first_name','$last_name','$mobile_no','$email', '$password','$gender')";
+           $insert = "INSERT INTO r_signup (r_name, mobile_num, email, r_password, r_address) VALUES ('$r_name','$mobile_no','$email', '$password', '$r_address')";
            $results = mysqli_query($db, $insert);
            var_dump($insert);
            if ($results) {
@@ -55,18 +57,14 @@ if (mysqli_multi_query($db, $insert)) {
 
 }
 
-//get value from database
-// $sql = "SELECT * FROM signup";
-
-// $result = mysqli_query($db, $sql);
-
-// if(mysqli_num_rows($result) > 0){
-// 	while($row = mysqli_fetch_assoc($result)) {
-// 		echo "First Name: " .$row["first_name"] ."</br>";
-// 	}
-// }
-
 mysqli_close($db);
+
+
+
+
+
+
+
 
 
 

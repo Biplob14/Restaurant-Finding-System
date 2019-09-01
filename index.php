@@ -8,6 +8,9 @@
 	.checked {
   	color: orange;
 	}
+	#map{
+		height: 100%;
+	}
 </style>
 
 	<div class="container" id="wrap">
@@ -20,8 +23,14 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
       <div class="col-lg-6 maps">
-        <div class="map-responsive">
-      		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386950.6511603643!2d-73.70231446529533!3d40.738882125234106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva+York!5e0!3m2!1ses-419!2sus!4v1445032011908" width="500" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="map-responsive" style="width: 500px;height: 600px;">
+      		<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386950.6511603643!2d-73.70231446529533!3d40.738882125234106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva+York!5e0!3m2!1ses-419!2sus!4v1445032011908" width="500" height="600" frameborder="0" style="border:0" allowfullscreen> -->
+      		<!-- <iframe width="500" height="600">
+      			
+      		</iframe> -->
+      		<div id="map"></div>
+      		<?php include "map.php" ?>
+
 		</div>
       </div>
 				
@@ -57,66 +66,11 @@
 			</br>
 
 			<div>
-				<table class="table table-hover table-striped">
-					<tr >
 
-						<td> <a  href="restaurant_home.php">Mad Chef</a></br>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star"></span>
-						</td>
 
-					</tr>
-					<tr>
-						<td><a  href="restaurant_home.php">Mad Chef</a></br>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star"></span>
-						<span class="fa fa-star"></span>
 
-						</td>
-					</tr>
-					<tr>
-						<td><a  href="restaurant_home.php">Mad Chef</a></br>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star"></span>
-						<span class="fa fa-star"></span>
-						<span class="fa fa-star"></span>
-						</td>
-					</tr>
-					<tr>
-						<td><a  href="restaurant_home.php">Mad Chef</a></br>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star"></span>
-						<span class="fa fa-star"></span>
-						<span class="fa fa-star"></span>
-						<span class="fa fa-star"></span>
-						</td>
-					</tr>
-					<tr>
-						<td><a  href="restaurant_home.php">Mad Chef</a></br>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-						</td>
-					</tr>
-					<tr>
-						<td><a  href="restaurant_home.php">Mad Chef</a></br>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star"></span>
-						<span class="fa fa-star"></span>
-						</td>
-					</tr>
+				<?php include"restaurant_list.php" ?>
 
-				</table>
 
 
 			</div>
@@ -131,6 +85,7 @@
 	</div>
 
 </body>
+
 
 
 <?php include "footer.php" ?>
