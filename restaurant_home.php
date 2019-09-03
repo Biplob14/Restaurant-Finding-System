@@ -1,5 +1,20 @@
 <?php include "header.php";?>
+<?php include "server_connect.php"; ?>
+<?php 
 
+	$r_name = $_SESSION['r_name'];
+	$query = "SELECT * FROM food_post WHERE r_name = '$r_name'";
+	$posts=mysqli_query($db,$query);
+
+	while ($row=mysqli_fetch_assoc($posts)) {
+            // $user_index = $row['id'];
+
+            $food_name = $row['food_name'];
+            $food_img = $row['food_img'];
+
+}
+
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +23,7 @@
 <body>
 		<div class="container">
 			<div class="text-center">
-				<h2 class="text-primary">Mad Chef</h2>
+				<h2 class="text-primary"><?php echo $_SESSION['r_name']; ?></h2>
 			</div>
 		
 		<div class="row form-group"><?php include "r_slider.php" ?> </div>
@@ -17,7 +32,7 @@
 
 				<div class="row form-group">
 					<div class="col-lg-4 itm_img">
-						<img src="resource/item1.jpg" height="200px" width="100%">
+						<img src="<?php echo $food_img ?>" height="200px" width="100%">
 
 						<div class="middle">
     					<div class="text">Burger</div>
@@ -92,7 +107,7 @@
 			<div class="col-lg-3 align-self-center" >
 				
 				<img src="resource/r_logo.png" class="rounded mx-auto d-block" height="100px" width="100px" align="align-self-center">
-				<label class="font-primary"><h2>Food Menu</h2></label>
+				<label class="font-primary"><h2><a href="menu.php">Food Menu</a></h2></label>
 				<img src="resource/menu.jpg" height="366px" width="100%">
 			</div>
 			

@@ -31,7 +31,7 @@
     	
 
 <form action="" method="post" enctype="multipart/form-data">
-    <div class="form-group">
+    <!-- <div class="form-group">
             <label >Select Resturant</label>
               <select class="form-control" name="restaurant_name">
                 <option value="dominos" name="">Dominos</option>
@@ -42,7 +42,7 @@
                 <option value="doi fuchka" name="">Doi Fuchka</option>
               </select>
             
-          </div>
+          </div> -->
 
 	<div class="form-group">
 		<label for="title">Food Name</label>
@@ -54,14 +54,14 @@
 		<input type="text" class="form-control" name="post_cat_id">
 	</div> -->
 
-	<div class="form-group">
+<!-- 	<div class="form-group">
 		<label for="title">Price</label>
 		<input type="text" class="form-control" name="food_price">
-	</div>
+	</div> -->
 
 	<div class="form-group">
 		<label for="title">Food Image</label>
-		<input type="file" name="food_image">
+		<input type="file" name="file">
 	</div>
 
 
@@ -84,33 +84,78 @@
     <!-- /#wrapper -->
 
 
-<!-- <?php include "admin_footer.php" ?> -->
+
 
 
 <!-- Database -->
 
-<?php include "../server_connect.php" ?>
-
+<?php include "server_connect.php" ;?>
 <?php 
 
 if (isset($_POST['submit'])) {
 
+      $r_name = $_SESSION['r_name'];
+
 			$food_name = $_POST['food_name'];
-			$food_price = $_POST['food_price'];
-			$food_image = $_POST['food_image'];
+			// $food_price = $_POST['food_price'];
+			// $food_img = $_POST['food_img'];
 			$food_offer = $_POST['food_offer'];
-			$restaurant_name = $_POST['restaurant_name'];
+
+			// $r_name = $_POST['r_name'];
+
+      //image upload
+          $fileName = $_FILES['file'] ['name'];
+          $fileTmpName = $_FILES['file'] ['tmp_name'];
+          $fileSize = $_FILES['file'] ['size'];
+          $fileError = $_FILES['file'] ['error'];
+          $fileType = $_FILES['file'] ['type'];
+
+          $fileExt = explode('.', $fileName);
+          $fileActualExt = strtolower(end($fileExt));
+
+          $allowed = array('jpg', 'jpeg', 'png');
+
+          if (in_array($fileActualExt, $allowed)) {
+            if ($fileError === 0) {
+              if ($fileSize < 5000000) {
+                $fileNameNew = uniqid('', true).".".$fileActualExt;
+                $fileDestination = '../resource/'.$fileNameNew;
+
+                $final_destination = substr($fileDestination,3);
 
 
-			$insert = "INSERT INTO food_post(restaurant_name, food_name, food_price, food_image, food_offer) VALUES ('$restaurant_name', '$food_name', '$food_price', '$food_image', '$food_offer')";
+                move_uploaded_file($fileTmpName, $fileDestination);
+                //header("Location: show_image.php?uploadsuccess");
+                echo "uploaded";
+              }
+              else{
+                echo "Your file is too big!";
+              }
+            }else {
+              echo "There was an error uploading your file!";
+            }
+          } else {
+            echo "File extension error. Try to upload jeg, jpeg or png extension file";
+          }
+
+
+
+
+
+
+
+
+
+
+			$insert = "INSERT INTO food_post(r_name, food_name, food_img, food_offer) VALUES ('$r_name', '$food_name', '$final_destination', '$food_offer')";
 
 
 
 
 			$results = mysqli_query($db, $insert);
-           		var_dump($insert);
+           		// var_dump($insert);
            		if ($results) {
-             	echo 'Saved!';
+             	// echo 'Saved!';
            		}
            		else{
             		echo mysqli_error($db);

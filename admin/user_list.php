@@ -1,4 +1,5 @@
 <?php include "admin_header.php" ?>
+<?php ob_start(); ?>
 
 
     <div id="wrapper">
@@ -55,7 +56,7 @@
 
   
         while ($row=mysqli_fetch_assoc($users)) {
-            $user_index = $row['id'];
+            // $user_index = $row['id'];
             $user_id = $row['id'];
 
             $first_name = $row['first_name'];
@@ -64,6 +65,7 @@
             $moblie_no = $row['mobile_no'];
             $email = $row['email'];
             $gender= $row['gender'];
+
 
             echo "<tr>";
 
@@ -79,10 +81,23 @@
 
             echo "<td>{$gender}</td>";
 
+
+            echo"<td> <a href='user_list.php?delete={$user_id}'> Delete </a> </td>";
+
+
             echo "</tr>";
 
             $user_index++;
 
+            }
+
+
+            if (isset($_GET['delete'])) {
+                $user_id= $_GET['delete'];
+                $query = "DELETE FROM menu WHERE id ={$user_id}";
+                $delete_query = mysqli_query($db, $query);
+
+                header("Location:user_list.php");
             }
 
 

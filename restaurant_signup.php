@@ -3,7 +3,7 @@
 <div class="container" id="wrap">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            <form action="r_signup_db.php" method="post" accept-charset="utf-8" class="form" role="form">   <legend>Sign Up for Restaurant</legend>
+            <form action="r_signup_db.php" method="post" accept-charset="utf-8" class="form" role="form" enctype="multipart/form-data">   <legend>Sign Up for Restaurant</legend>
 
                     <div class="row">
                         
@@ -29,7 +29,7 @@
                      <textarea rows="5" cols="12" class="form-control input-lg" name="r_address"> </textarea>
 
                      <label>Upload Image:</label>
-                    <input type="file" class="custom-file-input" id="customFile" name="filename" required/>
+                    <input type="file" class="custom-file-input" id="customFile" name="file" required/>
 
 
                     <br />

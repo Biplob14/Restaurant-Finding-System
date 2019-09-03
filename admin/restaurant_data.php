@@ -1,5 +1,6 @@
 
 <?php include "admin_header.php" ?>
+<?php ob_start(); ?>
 
 
     <div id="wrapper">
@@ -62,7 +63,7 @@
 
                       
                         	while ($row=mysqli_fetch_assoc($select_posts)) {
-						        $r_index = $row['id'];
+						        // $r_index = $row['id'];
 						        $r_id = $row['id'];
 
 						        $r_name = $row['r_name'];
@@ -80,11 +81,21 @@
 						        echo "<td>{$moblie_num}</br>{$email}</td>";
 						        // echo "<td>{$email}</td>";
 						        echo "<td>{$rating}*</td>";
+
+                                echo"<td> <a href='restaurant_data.php?delete={$r_id}'> Delete </a> </td>";
 						        echo "</tr>";
 
 						        $r_index++;
 
 						        }
+
+                                            if (isset($_GET['delete'])) {
+                                            $r_id= $_GET['delete'];
+                                            $query = "DELETE FROM r_signup WHERE id ={$r_id}";
+                                            $delete_query = mysqli_query($db, $query);
+
+                                            header("Location:restaurant_data.php");
+                                        }
 
 
 
