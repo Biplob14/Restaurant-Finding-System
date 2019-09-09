@@ -27,7 +27,8 @@
 						<?php  
 							$select_posts = mysqli_query($db,$query);
 
-								$r_name = $_SESSION['r_name'];
+								$r_name = $_GET['name'];
+								
 								$query = "SELECT * FROM menu WHERE r_name = '$r_name'";
 								$posts=mysqli_query($db,$query);
 

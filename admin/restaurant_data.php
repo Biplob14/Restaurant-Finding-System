@@ -27,14 +27,6 @@
         </li>
     </ol>
 
-
-
-
-
-
-
-
-
 <?php include_once "../server_connect.php"; ?>
 
 
@@ -72,6 +64,7 @@
 						        $email = $row['email'];
 						        $rating= $row['rating'];
 
+                                if($email!='0'){
 						        echo "<tr>";
 
 						        echo "<td>{$r_index}</td>";
@@ -84,6 +77,7 @@
 
                                 echo"<td> <a href='restaurant_data.php?delete={$r_id}'> Delete </a> </td>";
 						        echo "</tr>";
+                                }
 
 						        $r_index++;
 

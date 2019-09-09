@@ -9,7 +9,7 @@ if (!isset($db)) {
 	echo "not connected". mysqli_error($db);
 }else{
 
-	echo "connected"."</br>";
+	// echo "connected"."</br>";
 }
 
  ?>

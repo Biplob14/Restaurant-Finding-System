@@ -66,7 +66,7 @@
             $email = $row['email'];
             $gender= $row['gender'];
 
-
+            if(($row['email'] != "0")){
             echo "<tr>";
 
             echo "<td>{$user_index}</td>";
@@ -90,7 +90,7 @@
             $user_index++;
 
             }
-
+        }
 
             if (isset($_GET['delete'])) {
                 $user_id= $_GET['delete'];

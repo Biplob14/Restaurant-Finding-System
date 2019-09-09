@@ -32,7 +32,7 @@
                                             <div class='collapse navbar-collapse sticky-top'>
                                                       <ul class='nav navbar-nav navbar-right'>
 
-                                                        <li><a style='color:red;'>{$_SESSION['name']}</a></li>
+                                                        <li><a style='color:grey;'>{$_SESSION['name']}</a></li>
 
 
 
@@ -98,7 +98,7 @@
                                                     <div class='collapse navbar-collapse sticky-top'>
                                                               <ul class='nav navbar-nav navbar-right'>
 
-                                                                <li><a style='color:red;'>{$_SESSION['r_name']}</a></li>
+                                                                <li><a href='restaurant_home.php?name={$_SESSION['r_name']}' style='color:#64b5f6;'><b>{$_SESSION['r_name']}</b></a></li>
 
 
 

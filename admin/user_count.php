@@ -53,7 +53,7 @@
 
                             // User Count
 
-                            $sql="SELECT count(id) AS total FROM signup";
+                            $sql="SELECT count(email) AS total FROM signup";
                             $result=mysqli_query($db,$sql);
                             $values=mysqli_fetch_assoc($result);
                             $user_count=$values['total'];

@@ -136,6 +136,7 @@ if (isset($_POST['submit'])) {
 	$food_price= $_POST['food_price'];
 
 	$insert= "INSERT INTO menu(r_name,food_name,food_price) VALUES ('$r_name','$food_name','$food_price')";
+	$insert2= "INSERT INTO r_signup (r_name, food_name, food_price) VALUES ('$r_name', '$food_name', '$food_price')";
 
 	$results = mysqli_query($db, $insert);
            		// var_dump($insert);
@@ -147,10 +148,9 @@ if (isset($_POST['submit'])) {
            		else{
             		echo mysqli_error($db);
             		echo "Not saved!";
-           		}
+           		} 
 
-
-
+     mysqli_query($db, $insert2);	
 }
 
 
