@@ -27,9 +27,9 @@
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
       }
       var locations = [
-        {lat: 23.746994, lng: 90.370572},    //nostalgic cfe
-        {lat: 23.746591, lng: 90.370669},   //cilantro
-        {lat: 23.746107, lng: 90.371166},   //the dark music cafe
+        {lat: 23.746877, lng: 90.370579},    //nostalgic cafe- okay
+        {lat: 23.746507, lng: 90.370671},   //cilantro- 
+        {lat: 23.746107, lng: 90.371166},   //the dark music cafe- okay
         {lat: 23.745149, lng: 90.371761},   //kabooz
         {lat: 23.746179, lng: 90.371648},   //cafe majlish
         {lat: 23.743729, lng: 90.373536},    //kfc
