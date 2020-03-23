@@ -2,6 +2,23 @@
 <?php include "server_connect.php" ?>
 
 <style type="text/css">
+	body{
+		background: url("resource/f2.jpg") no-repeat;
+		background-size: cover;
+		z-index: -1;
+		opacity: .9;
+		
+	}
+	div>label{
+		color:#0dc0ea;
+	}
+	.result-table{
+		color:#0dc0ea;
+		font-size: 1.6rem;
+	}
+	.result-table>a{
+		font-size:1.8rem;
+	}
 	#wrap{
 		margin-bottom: 6%;
 
@@ -30,8 +47,8 @@
 
 
 		<div class="col-lg-6">
-			  <form action="index.php" method="post">
-			    <div class="form-group">
+			<form action="index.php" method="post">
+				<div class="form-group">
 			      <label for="">Resturant</label>
 			      <input type="text" class="form-control" id="" placeholder="Resturant name" name="r_name">
 			    </div>
@@ -64,11 +81,11 @@
 			    </div>
 
 			    <button type="submit" name="submit" value="submit" class="btn btn-primary center-block">Submit</button>
-			  </form>
+			</form>
 			  <hr>
 			</br>
 
-			<div>
+			<div class="result-table">
 				<table class="table table-hover table-striped">
 
 				<?php 
