@@ -16,17 +16,12 @@
     </div>
     <div class="collapse navbar-collapse sticky-top">
 
-
-
-<?php  
-
+<?php
         if (isset($_SESSION['email'])) {   //user logic
 
               $img= $_SESSION['image'];
 
                             echo "
-
-
                                           <ul class='nav navbar-nav navbar-right'>
 
                                             <div class='collapse navbar-collapse sticky-top'>
@@ -53,7 +48,6 @@
                                       else if (isset($_SESSION['admin'])) { //admin logic
 
                                         // $img= $_SESSION['image'];
-
 
                                         echo "
 
