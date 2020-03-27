@@ -6,7 +6,7 @@
 		background: url("resource/f2.jpg") no-repeat;
 		background-size: cover;
 		z-index: -1;
-		opacity: .9;
+		opacity: 1;
 		
 	}
 	div>label{

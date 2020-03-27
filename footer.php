@@ -1,4 +1,13 @@
-
+<style>
+	.jumbotron{
+		opacity:0.8;
+	}
+	.footer-text{
+		font-size:1.6rem;
+		font-weight: 500;
+		letter-spacing:1px;
+	}
+</style>
 <footer class="page-footer  jumbotron">
 		   
 	<div class="container">
@@ -10,7 +19,7 @@
 	    	</div>
 	    	</div>
 
-	    <div class="control-group">
+	    <div class="control-group footer-text">
 	        <div class="col-lg-3">
 	        	<!-- <a href="">Conact Us</a> -->
 	        	<a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">Contact US</a>

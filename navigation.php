@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 
-<nav class="navbar  navbar-inverse navbar-light" style="background-color:  #38006f;" >
+<nav class="navbar  navbar-inverse navbar-light" style="background-color:  #38006f; opacity:0.8" >
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
