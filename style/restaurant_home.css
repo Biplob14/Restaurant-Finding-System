@@ -1,0 +1,29 @@
+.transparent-box{
+    /* width: 40%; */
+  margin: 0 auto;
+  background: rgba(189, 174, 174, 0.22);
+  padding: 1px;
+  border: 64px solid rgba(217, 204, 204, 0.09);
+  border-radius: 50px/50px;
+  background-clip: padding-box;
+  text-align: center;
+  
+}
+
+.slider-text{
+    color: rgb(94, 28, 148);
+    font: 700 2.5em/1 "Oswald", sans-serif;
+    font-weight: bold;
+    letter-spacing: .3em;
+    /* display: inline-block; */
+    border: 4px double rgba(255, 255, 255. .25);
+    /* border-width: 4px 0; */
+    padding: 1.5em 0em;
+    /* position: absolute; */
+    /* width: 40em; */
+    /* margin: 0 0 0 -20em; */
+    text-align: center;
+    text-decoration: underline;
+    -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2));;
+    
+}

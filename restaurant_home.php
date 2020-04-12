@@ -1,5 +1,8 @@
 <?php include "header.php";?>
 <?php include "server_connect.php"; ?>
+<style>
+	<?php include "style/restaurant_home.css" ?>
+</style>
 <?php 
 	if (isset($_SESSION['r_name'])) {
 	
@@ -30,6 +33,9 @@
 			</div>
 		
 		<div class="row form-group"><?php include "r_slider.php" ?> </div>
+		<div class="transparent-box">
+			<p class="slider-text">Find  your  test  from  our  best</p>
+		</div>
 		<div class="row form-group">
 			<div class="col-lg-9"> <!-- food items -->
 
