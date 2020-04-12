@@ -15,7 +15,7 @@
         }
 
 }
-			   	$r_name = $_GET['name'];
+			$r_name = $_GET['name'];
 
  ?>
 <!DOCTYPE html>
@@ -26,7 +26,7 @@
 <body>
 		<div class="container">
 			<div class="text-center">
-				<h2 class="text-primary"><?php echo $r_name;?></h2>
+				<h2 class="text-primary" title="Restaurant name"><?php echo $r_name;?></h2>
 			</div>
 		
 		<div class="row form-group"><?php include "r_slider.php" ?> </div>

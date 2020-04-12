@@ -12,7 +12,7 @@
         <img style="max-width:100px; margin-top: -7px;"
              src="resource/rms.png" alt="treat dao icon">
     </a>
-      <a class="navbar-brand" href="index.php">Resturant Finder System</a>
+      <a class="navbar-brand" href="index.php" title="Resturant Finder System">Resturant Finder System</a>
     </div>
     <div class="collapse navbar-collapse sticky-top">
 
@@ -46,7 +46,6 @@
                                       }
 
                                       else if (isset($_SESSION['admin'])) { //admin logic
-
                                         // $img= $_SESSION['image'];
 
                                         echo "
@@ -79,8 +78,6 @@
                                                 $img= $_SESSION['r_image'];
 
                                                   echo "
-
-
                                                   <ul class='nav navbar-nav navbar-right'>
 
                                                     <div class='collapse navbar-collapse sticky-top'>
@@ -103,31 +100,27 @@
                                                 ";
                                               }
 
-
-
                                 else
                                   {     //default logic
                                     echo "
                                       <ul class='nav navbar-nav navbar-right'>
 
                                           <div class='collapse navbar-collapse sticky-top'>
-                                                    <ul class='nav navbar-nav navbar-right'>
+                                            <ul class='nav navbar-nav navbar-right'>
 
-                                                      <li class='dropdown'>
-                                                        <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Sign-Up<span class='caret'></span></a>
+                                              <li class='dropdown'>
+                                                <a class='dropdown-toggle' data-toggle='dropdown' href='#' title='Click to sign-up for an account'>Sign-Up<span class='caret'></span></a>
                                                         <ul class='dropdown-menu'>
                                                           <li><a href='signup.php'>User Sign-Up</a></li>
                                                           <li><a href='restaurant_signup.php'>Restaurant Sign-Up</a></li>
-                                                        </ul>
-                                                       </li>
+                                                        </ul>                                                      
 
+                                              <li><a href='login.php' title='Click to login on your account'><span class='glyphicon glyphicon-log-in'></span> Login</a></li>
 
-                                                <li><a href='login.php' ><span class='glyphicon glyphicon-log-in'></span> Login</a></li>
-
-                                              </ul>
+                                            </ul>
                                           </div>
 
-                                        </ul>
+                                      </ul>
 
 
 
