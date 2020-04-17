@@ -1,18 +1,29 @@
 <?php include "header.php"?>
 <style>
-  .container{
-    background-image:url('resource/r-login.png') no-repeat;
+  .r-signup-img{
+    position: relative;
+    width: 200PX;
+    height: 200PX;
+    right:-575px;
+    top:240px;
+  }
+  .row{
+    top:20px;
   }
 </style>
 <div class="container" id="wrap">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
+
+        
             <form action="r_signup_db.php" method="post" accept-charset="utf-8" class="form" role="form" enctype="multipart/form-data">   <legend>Sign Up for Restaurant</legend>
+
+                    <div class="r-signup-img"><img src="resource/r-login.png" alt="signup for restaurant" height="500px"></div>    <!-- image for background -->
 
                     <div class="row">
                         
-                            <label>Restaurant Name</label>
-                            <input type="text" name="r_name" value="" class="form-control input-lg" placeholder="Resturant Name"  required />                     
+                        <label>Restaurant Name</label>
+                        <input type="text" name="r_name" value="" class="form-control input-lg" placeholder="Resturant Name"  required />                     
 
                         <label>Mobile Number</label>
                         <input type="text" name="mobile_no" value="" class="form-control input-lg" placeholder="01*********"  required/>
