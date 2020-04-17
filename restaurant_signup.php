@@ -1,5 +1,9 @@
 <?php include "header.php"?>
-
+<style>
+  .container{
+    background-image:url('resource/r-login.png') no-repeat;
+  }
+</style>
 <div class="container" id="wrap">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
