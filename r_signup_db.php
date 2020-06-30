@@ -86,23 +86,10 @@ if (mysqli_multi_query($db, $insert)) {
 	
 }else{
 
-	echo "error: ". $insert. mysqli_error($db);
-}
-
+	  echo "error: ". $insert. mysqli_error($db);
+  }
 
 }
 
 mysqli_close($db);
-
-
-
-
-
-
-
-
-
-
-
-
- ?>
+?>
