@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 23, 2019 at 07:50 PM
--- Server version: 10.1.40-MariaDB
--- PHP Version: 7.1.29
+-- Generation Time: Jul 26, 2020 at 11:19 AM
+-- Server version: 10.4.8-MariaDB
+-- PHP Version: 7.3.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -42,29 +42,29 @@ CREATE TABLE `food_post` (
 --
 
 INSERT INTO `food_post` (`food_post_id`, `restaurant_name`, `food_name`, `food_price`, `food_image`, `food_offer`) VALUES
-(1, '', 'abir', 10, '', '100% free'),
-(2, '', 'abir', 10, '', '10% free'),
+(1, '', 'abir', 10, '', ''),
+(2, '', 'abir', 10, '', ''),
 (3, '', '', 0, '', ''),
 (4, '', '', 0, '', ''),
-(5, '', 'Naga Burger', 0, '', 'kono offer nai'),
-(6, '', 'pasta beguni', 22, '', 'no  fucking offer available'),
-(7, '', 'pasta beguni', 231, '', 'akdom free sauce '),
-(8, '', 'cake', 222, '', 'off'),
+(5, '', 'Naga Burger', 0, '', ''),
+(6, '', 'pasta beguni', 22, '', ''),
+(7, '', 'pasta beguni', 231, '', ''),
+(8, '', 'cake', 222, '', ''),
 (9, '', 'pizza', 2000, '', 'no offer available'),
-(10, '', 'dog hot', 200, '', '20% off'),
-(11, '', 'abir', 0, '', '156'),
-(12, '', 'abir', 0, '', '156'),
+(10, '', 'dog hot', 200, '', ''),
+(11, '', 'abir', 0, '', ''),
+(12, '', 'abir', 0, '', ''),
 (13, '', '', 0, '', ''),
 (14, '', '', 0, '', ''),
 (15, '', '', 0, '', ''),
-(16, '', 'jyf', 4563, '', '473'),
+(16, '', 'jyf', 4563, '', ''),
 (17, '', '', 0, '', ''),
-(18, '', 'Naga Burger', 231, '', 'dsgdfg'),
-(19, '', 'Naga Burger', 231, '', 'dsgdfg'),
-(20, '', 'Naga Burger', 231, '', 'dsgdfg'),
-(21, '', 'cake', 465, '', 'gsdg df'),
+(18, '', 'Naga Burger', 231, '', ''),
+(19, '', 'Naga Burger', 231, '', ''),
+(20, '', 'Naga Burger', 231, '', ''),
+(21, '', 'cake', 465, '', ''),
 (22, '', '', 0, '', ''),
-(23, 'cake bean', 'Naga Burger', 432, '', 'dsfghdfh');
+(23, 'cake bean', 'Naga Burger', 432, '', '');
 
 -- --------------------------------------------------------
 
@@ -87,9 +87,9 @@ CREATE TABLE `r_signup` (
 --
 
 INSERT INTO `r_signup` (`id`, `r_name`, `r_address`, `mobile_num`, `email`, `r_password`, `rating`) VALUES
-(1, 'normal chef', 'dhanmondi', 1456748974, 'yapskroy085432552232@gmail.com', '202cb962ac59075b964b07152d234b70', 3),
-(2, 'ab-normal chef', 'gulshan', 145265256, 'skroy082232@gmail.com', '202cb962ac59075b', 2.8),
-(3, 'aho vatija', 'mirpur', 65842514, 'skroy32@gmail.com', '202cb962ac', 3.5),
+(1, 'mad chef', 'dhanmondi', 1456748974, 'yapskroy085432552232@gmail.com', '202cb962ac59075b964b07152d234b70', 3),
+(2, 'normal chef', 'gulshan', 145265256, 'skroy082232@gmail.com', '202cb962ac59075b', 2.8),
+(3, 'taste blast', 'mirpur', 65842514, 'skroy32@gmail.com', '202cb962ac', 3.5),
 (4, 'c-minor', '', 123456, 'cminor@minor.com', '81dc9bdb52d04dc20036dbd8313ed055', 0),
 (5, 'triangle', '', 90909090, 'triangle@gel.com', '962012d09b8170d912f0669f6d7d9d07', 0),
 (6, 'In n Out', 'Mirpur-2, Dhaka ', 9876, 'in@out.com', '81dc9bdb52d04dc20036dbd8313ed055', 0);
@@ -120,7 +120,7 @@ INSERT INTO `signup` (`id`, `first_name`, `last_name`, `mobile_no`, `email`, `pa
 (10, 'Saikat', 'Roy', 1949215019, 'yapssskroy08@gmail.coms', '912ec803b2ce49e4a541068d495ab570', 'Male'),
 (11, 'Saikat', '', 1949215019, 'ysssapskroy08@gmail.com', 'd41d8cd98f00b204e9800998ecf8427e', 'Male'),
 (12, 'Borsha', 'Debnath', 1845216349, 'dhfjsbgvh@gmail.com', '25f9e794323b453885f5181f1b624d0b', 'Female'),
-(13, 's', 'k', 2147483647, 'njm@gmail.com', '202cb962ac59075b964b07152d234b70', 'Male');
+(13, 'sadekur', 'k', 2147483647, 'njm@gmail.com', '202cb962ac59075b964b07152d234b70', 'Male');
 
 --
 -- Indexes for dumped tables
