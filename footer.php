@@ -7,6 +7,9 @@
 		font-weight: 500;
 		letter-spacing:1px;
 	}
+	.footer {
+		width: 100%;
+	}
 </style>
 <footer class="page-footer  jumbotron">
 		   

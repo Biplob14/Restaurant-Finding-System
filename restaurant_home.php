@@ -41,7 +41,8 @@
 
 				<div class="row form-group">
 					<div class="col-lg-4 itm_img">
-						<img src="resource/item1.jpg" height="200px" width="100%">
+						<!-- <img src="resource/item1.jpg" height="200px" width="100%"> -->
+						<img src="resource/item1.jpg" height="20vh" width="50%">
 
 						<div class="middle">
     					<div class="text">Burger</div>

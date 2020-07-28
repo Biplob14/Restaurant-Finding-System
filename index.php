@@ -3,7 +3,7 @@
 
 <style type="text/css">
 	body{
-		background: url("resource/f2.jpg") no-repeat;
+		background: url("resource/food.jpg") no-repeat;
 		background-size: cover;
 		z-index: -1;
 		opacity: 1;
@@ -158,12 +158,7 @@
 					// 	}
 					// }
 
-
-
 				// }
-
-
-
 						// obsolete code
 					
 						 // else
@@ -270,6 +265,7 @@
 											// <span class="fa fa-star checked"></span>
 											// <span class="fa fa-star checked"></span>
 											// <span class="fa fa-star"></span>
+											
 											echo "</tr>";
 										}
 										
@@ -288,6 +284,7 @@
 											// <span class="fa fa-star checked"></span>
 											// <span class="fa fa-star checked"></span>
 											// <span class="fa fa-star"></span>
+											
 											echo "</tr>";
 										}
 										
@@ -323,22 +320,13 @@
 
 ?>
 </table>
-
-
-
 			</div>
-
 			</div>
-
-		</div>
-
-
-		
+		</div>		
 		
 	</div>
 
 </body>
-
 
 
 <?php include "footer.php" ?>
