@@ -3,8 +3,10 @@
 
 <style type="text/css">
 	body{
-		background: url("resource/food.jpg") no-repeat;
+		background: url("resource/bg.png");
 		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
 		z-index: -1;
 		opacity: 1;
 		
@@ -24,7 +26,7 @@
 
 	}
 	.checked {
-  	color: orange;
+		color: orange;
 	}
 	#map{
 		height: 100%;
@@ -34,55 +36,55 @@
 		<div class="row">
 			<div class="col-lg-6">
 
-      <div class="col-lg-6 maps">
+			<div class="col-lg-6 maps">
         <div class="map-responsive" style="width: 500px;height: 600px;">
 
-      		<div id="map"></div>
-      		<?php include "map.php" ?>
+    <div id="map"></div>
+	<?php include "map.php" ?>
 
 		</div>
-      </div>
+    </div>
+			
+	</div>
+
+
+	<div class="col-lg-6">
+		<form action="index.php" method="post">
+			<div class="form-group">
+				<label for="">Resturant</label>
+				<input type="text" class="form-control" id="" placeholder="Resturant name" name="r_name">
+			</div>
+			<div class="form-group">
+				<label for="pwd">Price Range</label>
+				<input type="text" class="form-control" id="pwd" placeholder="Price Range" name="food_price">
+			</div>
+			<div class="form-group">
+				<label for="sel1">Food Item (select one):</label>
+				<select class="form-control" id="sel1" name="food_item">
+					<option></option>
+					
+					<?php 
+
+						$query = "SELECT * FROM menu";
+						$posts=mysqli_query($db,$query);
+
+						while ($row=mysqli_fetch_assoc($posts)) {
+							// $user_index = $row['id'];
+
+							$food_name = $row['food_name'];
+
+							echo "<option value = "; echo str_replace(' ', '_', $food_name); echo ">{$food_name}</option> ";
+							}
+						?>
+					
+
+				</select>
 				
 			</div>
 
-
-		<div class="col-lg-6">
-			<form action="index.php" method="post">
-				<div class="form-group">
-			      <label for="">Resturant</label>
-			      <input type="text" class="form-control" id="" placeholder="Resturant name" name="r_name">
-			    </div>
-			    <div class="form-group">
-			      <label for="pwd">Price Range</label>
-			      <input type="text" class="form-control" id="pwd" placeholder="Price Range" name="food_price">
-			    </div>
-			    <div class="form-group">
-			    	<label for="sel1">Food Item (select one):</label>
-      				<select class="form-control" id="sel1" name="food_item">
-      					<option></option>
-      					
-      					<?php 
-
-      						$query = "SELECT * FROM menu";
-      						$posts=mysqli_query($db,$query);
-
-      						while ($row=mysqli_fetch_assoc($posts)) {
-					            // $user_index = $row['id'];
-
-					            $food_name = $row['food_name'];
-
-					            echo "<option value = "; echo str_replace(' ', '_', $food_name); echo ">{$food_name}</option> ";
-					            }
-      					 ?>
-      					
-
-      				</select>
-			    	
-			    </div>
-
-			    <button type="submit" name="submit" value="submit" class="btn btn-primary center-block">Submit</button>
-			</form>
-			  <hr>
+			<button type="submit" name="submit" value="submit" class="btn btn-primary center-block">Submit</button>
+		</form>
+			<hr>
 			</br>
 
 			<div class="result-table">

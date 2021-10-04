@@ -20,7 +20,7 @@
 }
 			$r_name = $_GET['name'];
 
- ?>
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,8 +45,8 @@
 						<img src="resource/item1.jpg" height="20vh" width="50%">
 
 						<div class="middle">
-    					<div class="text">Burger</div>
-  						</div>
+						<div class="text">Burger</div>
+						</div>
 
 						<p>Burger</p>
 						
@@ -56,8 +56,8 @@
 						<img src="resource/item2.jpg" height="200px" width="100%">
 
 						<div class="middle">
-    					<div class="text">Pasta</div>
-  						</div>
+						<div class="text">Pasta</div>
+						</div>
 
 						<p>Pasta</p>
 
@@ -67,8 +67,8 @@
 						<img src="resource/item3.jpg"height="200px" width="100%">
 
 						<div class="middle">
-    					<div class="text">Mojito</div>
-  						</div>
+						<div class="text">Mojito</div>
+						</div>
 
 						<p>Mojito</p>
 
@@ -80,8 +80,8 @@
 						<img src="resource/item4.jpg" height="200px" width="100%">
 
 						<div class="middle">
-    					<div class="text">Pizza</div>
-  						</div>
+						<div class="text">Pizza</div>
+						</div>
 
 						<p>Pizza</p>
 
@@ -91,8 +91,8 @@
 						<img src="resource/item5.jpg" height="200px" width="100%">
 
 						<div class="middle">
-    					<div class="text">Chicken</div>
-  						</div>
+						<div class="text">Chicken</div>
+						</div>
 
 						<p>Chicken</p>
 
@@ -102,15 +102,13 @@
 						<img src="resource/item6.jpg" height="200px" width="100%">
 
 						<div class="middle">
-    					<div class="text">Spheghatti</div>
-  						</div>
+						<div class="text">Spheghatti</div>
+						</div>
 
 						<p>Speghatti</p>
 
 					</div>
 				</div>
-
-				
 
 			</div>
 
@@ -160,26 +158,26 @@
 	}
 	.text {
 		border-radius: 25px;
-  		background-color: #38006F;
-  		color: white;
-  		font-size: 16px;
-  		padding: 16px 32px;
+		background-color: #38006F;
+		color: white;
+		font-size: 16px;
+		padding: 16px 32px;
 
 
 	}
 	.text-primary{
 		border-radius: 25px;
-  		background-color: #38006F;
-  		color: white;
-  		font-size: 40px;
+		background-color: #38006F;
+		color: white;
+		font-size: 40px;
 	}
 
 	.itm_img:hover {
-  		opacity: 0.7;
+		opacity: 0.7;
 	}
 
 	.middle:hover {
-  		opacity: 1;
+		opacity: 1;
 	}
 </style>
 
@@ -193,29 +191,17 @@
 	<?php 
 
 
- 							$query = "SELECT * FROM food_post" ;
-        					$select_posts=mysqli_query($db,$query);
+		$query = "SELECT * FROM food_post" ;
+		$select_posts=mysqli_query($db,$query);
+
+		while ($row=mysqli_fetch_assoc($select_posts)) {
+			$food_offer = $row['food_offer'];
+
+			echo "<marquee behavior='scroll' direction='right' scrollamount='10'>{$food_offer}</marquee>";
 
 
-                      
-                        	while ($row=mysqli_fetch_assoc($select_posts)) {
-						        $food_offer = $row['food_offer'];
-
-
-						        echo "<marquee behavior='scroll' direction='right' scrollamount='10'>{$food_offer}</marquee>";
-
-
-						        }
-						   
-
-
-
+			}	
 	?>
-
-
-
-
 </div>
-
 
 <?php include "footer.php";?>
